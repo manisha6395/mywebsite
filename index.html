@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Hub - Best AI Tools</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+     <div class="logo">
+    <img src="image.png" alt="AI Hub Logo">
+</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="langBtn">हिंदी</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 id="title">Discover The Best AI Tools</h1>
+      <p id="subtitle">
+        Explore powerful AI tools for Chat, Images, Videos and Coding.
+      </p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search AI Tools...">
+        <button>Search</button>
+      </div>
+
+      <a href="#tools" class="hero-btn">Explore Tools</a>
+    </div>
+  </section>
+
+  <!-- Featured Tools -->
+  <section class="tools-section" id="tools">
+    <h2>Featured AI Tools</h2>
+
+    <div class="tool-container">
+<div class="tool-card" data-type="chat">
+  <a href="https://chatgpt.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="">
+      <h3>ChatGPT</h3>
+      <p>AI assistant for writing, coding and learning.</p>
+  </a>
+</div>
+
+              <div class="tool-card" data-type="chat">
+  <a href="https://gemini.google.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="">
+      <h3>Gemini</h3>
+      <p>Google AI assistant for productivity.</p>
+  </a>
+</div>
+
+        <div class="tool-card" data-type="chat">
+  <a href="https://claude.ai" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="">
+      <h3>Claude</h3>
+      <p>Helpful AI assistant with strong reasoning.</p>
+  </a>
+</div>
+
+<div class="tool-card" data-type="image">
+  <a href="https://www.midjourney.com" target="_blank">
+      <h3>Midjourney</h3>
+      <p>AI Image Generator</p>
+  </a>
+</div>
+
+<div class="tool-card" data-type="video">
+  <a href="https://runwayml.com" target="_blank">
+      <h3>Runway</h3>
+      <p>AI Video Generator</p>
+  </a>
+</div>
+
+<div class="tool-card" data-type="music">
+  <a href="https://suno.com" target="_blank">
+      <h3>Suno AI</h3>
+      <p>AI Music Generator</p>
+  </a>
+</div>
+
+<div class="tool-card" data-type="code">
+  <a href="https://cursor.com" target="_blank">
+      <h3>Cursor AI</h3>
+      <p>AI Coding Assistant</p>
+  </a>
+</div>
+
+    </div>
+</section>
+
+<div id="toolPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="toolTitle"></h2>
+        <p id="toolDescription"></p>
+    </div>
+</div>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <h2>Categories</h2>
+
+    <div class="category-box">
+     <div class="cat" onclick="filterTools('chat')">
+    🤖 Chat AI
+</div>
+      <div class="category-box">
+
+    <div class="cat" onclick="filterTools('all')">🏠 All Tools</div>
+
+    <div class="cat" onclick="filterTools('chat')">🤖 Chat AI</div>
+
+    <div class="cat" onclick="filterTools('image')">🎨 Image AI</div>
+
+    <div class="cat" onclick="filterTools('video')">🎬 Video AI</div>
+
+    <div class="cat" onclick="filterTools('code')">💻 Coding AI</div>
+
+</div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div>
+      <h3>100+</h3>
+      <p>AI Tools</p>
+    </div>
+
+    <div>
+      <h3>10K+</h3>
+      <p>Visitors</p>
+    </div>
+
+    <div>
+      <h3>50+</h3>
+      <p>Categories</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 AI Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
